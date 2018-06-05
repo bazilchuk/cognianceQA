@@ -1,0 +1,12 @@
+Script started on Tue Jun  5 03:49:11 2018
+[?1034hbash-3.2$ awk -F[:\ ]  '{count[$5]++}; $12 == 200 { hour[$5]++} END { for (i in  hour) print i, hour[i]/count[i]*100 }' datamining.log
+12 100
+13 100
+14 100
+15 99.5935
+16 100
+17 32.6733
+bash-3.2$ exit
+exit
+
+Script done on Tue Jun  5 03:49:24 2018
